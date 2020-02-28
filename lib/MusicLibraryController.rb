@@ -29,6 +29,10 @@ class MusicLibraryController
       all_songs << song
     end
     
-    all_songs.sort_by!
+    all_songs = all_songs.sort_by!{ |song| song.name }
+    
+    all_songs.each_with_index do |song, index|
+      result = "#{index + 1}. #{song.artist.name} - #{song.}"
+    end
   end
 end
