@@ -74,7 +74,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets
     songs = Song.all.sort_by!{ |song| song.name }
-    song = songs[input - 1]
+    song = songs[(input.to_i) - 1]
     song_name = song.name
     artist_name = song.artist.name
     puts "Playing #{song_name} by #{artist_name}"
