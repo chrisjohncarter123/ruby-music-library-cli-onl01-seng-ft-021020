@@ -52,7 +52,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets
     
-    Artist.all.select{|artist| artist.name == input}.each_with_index do |artist, index|
+    Artist.all.find{|artist| artist.name == input}.each_with_index do |artist, index|
       puts "#{index + 1}. #{artist.name}"
     end
 
