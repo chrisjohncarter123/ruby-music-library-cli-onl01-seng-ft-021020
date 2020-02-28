@@ -28,9 +28,9 @@ class MusicLibraryController
         when "list artist"
           list_songs_by_artist
         when "list genre"
-          list_songs
-        when "list songs"
-          list_songs
+          list_songs_by_genre
+        when "play song"
+          play_song
       end 
       
       input = gets
