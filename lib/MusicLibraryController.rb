@@ -55,7 +55,6 @@ class MusicLibraryController
     Artist.all.select{|artist| artist.name == input}.each_with_index do |artist, index|
       puts "#{index + 1}. #{artist.name}"
     end
-    
-    list_artists.select{|artist| artist == input}.sort_by!{|artist|}
+
   end
 end
