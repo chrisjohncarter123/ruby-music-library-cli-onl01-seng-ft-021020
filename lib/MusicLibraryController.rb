@@ -29,6 +29,6 @@ class MusicLibraryController
       all_songs << song
     end
     
-    all_songs.sory
+    all_songs.sort_by!
   end
 end
