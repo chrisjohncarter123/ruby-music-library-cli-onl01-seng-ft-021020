@@ -24,8 +24,8 @@ class MusicLibraryController
   end
   
   def list_songs
-    music_importer.files do |song|
-      
+    Song.all do |song|
+      puts song.name
     end
   end
 end
