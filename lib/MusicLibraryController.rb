@@ -32,7 +32,10 @@ class MusicLibraryController
     all_songs = all_songs.sort_by!{ |song| song.name }
     
     all_songs.each_with_index do |song, index|
-      result = "#{index + 1}. #{song.artist.name} - #{song.}"
+      result = "#{index + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      
+      puts result
     end
+    
   end
 end
