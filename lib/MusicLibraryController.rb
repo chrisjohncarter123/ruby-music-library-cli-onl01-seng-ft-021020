@@ -21,6 +21,9 @@ class MusicLibraryController
       input = gets
     end
     
-    
+  end
+  
+  def list_songs
+    music_importer.
   end
 end
