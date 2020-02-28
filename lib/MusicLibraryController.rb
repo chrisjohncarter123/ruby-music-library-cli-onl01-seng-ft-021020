@@ -53,6 +53,8 @@ class MusicLibraryController
     input = gets
     
     Artist.all.select{|artist| artist.name == input}.each_with_index do |artist, index|
+      
+      artist.
       puts "#{index + 1}. #{artist.name}"
     end
 
