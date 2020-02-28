@@ -24,6 +24,8 @@ class MusicLibraryController
   end
   
   def list_songs
-    music_importer.
+    music_importer.files do |song|
+      
+    end
   end
 end
