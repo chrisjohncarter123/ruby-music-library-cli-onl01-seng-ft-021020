@@ -18,6 +18,8 @@ class MusicLibraryController
     input = gets 
     
     while (input != "exit")
+      
+    
       input = gets
     end
     
